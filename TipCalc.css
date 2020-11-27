@@ -1,0 +1,67 @@
+/*Tip calculator css file*/
+
+ .container{
+    height: 500px;
+    width: 700px;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    background-color: lightgrey;
+    font-size: x-large;
+    color: black;
+ }
+
+ 
+#disp{
+    display: grid;   
+    /*grid-template-columns: 300px 1fr;*/
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto auto;
+    grid-template-areas: 
+    ". Bill_Amt"
+    ". Ser_Per"
+    ". Share_Bill"
+    ". btn_cal"
+    ". val_cal"
+    ". btn_clear";
+}
+#BillAmt{
+    grid-area: Bill_Amt;
+}
+#SerPer{
+    grid-area: Ser_Per;
+}
+#ShareBill{
+    grid-area: Share_Bill;
+}
+#btn{
+    grid-area: btn_cal;
+    height: 50px;
+    width: 100px;
+    background-color: red;
+    color: white;
+}
+#btnclear{
+    grid-area: btn_clear;
+    height: 50px;
+    width: 100px;
+    background-color: lightgrey;
+    color: black;
+}
+
+#ValCal{
+    grid-area: val_cal;
+    border:none
+}
+input[type=number], select 
+{
+    width: 80%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block; 
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+    font-size: x-large;    
+    
+}

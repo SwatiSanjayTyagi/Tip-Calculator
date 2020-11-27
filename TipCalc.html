@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tip Calculator</title>
+    <link rel="stylesheet" type="text/css" href="TipCalc.css"> <!--adding css file TipCalc.css-->
+</head>
+<body>
+    
+    <div class="container">
+        <h1 style=text-align:center>Tip Calculator</h1>
+        <form action="" method=""> <!--Adding a form-->
+            <div id='disp'>
+                <label for="BillAmt">Bill Amount Rs.:</label>
+                <input type="number" name="BillAmt" placeholder="Bill Amount in Rs." id="BillAmt" autofocus required> 
+                <label for="SerPer">How was the service ?</label>
+                <select name="SerPer" id="SerPer">
+                    <option value=""></option>
+                    <option value="0.2">Excellent - 20%</option>
+                    <option value="0.1">Medium - 10%</option>
+                    <option value="0.05">Not so good - 5%</option>
+                </select>
+                <label for="ShareBill">How many people are sharing the bill?</label>
+                <input type="number" name="ShareBill" placeholder="Number of people" id="ShareBill" required> 
+                <button id='btn' type="button">Calculate</button>
+                <br>
+                <label for="ValCal">Therefore amount shared per person =  Rs.</label>
+                <input type="number" id="ValCal" disabled>
+                <button id='btnclear' type="reset">Clear</button>
+        </div>
+        </form>
+    </div>
+    <script src='TipCalc.js'></script> <!--Adding java file TipCalc.js-->
+</body>
+</html>
